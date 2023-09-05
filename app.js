@@ -1,6 +1,6 @@
 function getComputerChoice() {
     const num = Math.floor(Math.random() * 3)
-    const rockPaperScissors = ["Rock" , "Paper" , "Scissors"];
+    const rockPaperScissors = ["rock" , "paper" , "scissors"];
     return rockPaperScissors[num];
 }
 
@@ -8,12 +8,20 @@ function playGame() {
    const playerSelection = prompt("Make a choice. Rock, paper, or scissors:");
    const computerSelection = getComputerChoice()
 
-   if (playerSelection === "Rock" && computerSelection === "Rock") {
+   if (playerSelection === "rock" && computerSelection === "rock") {
     console.log("Draw!")
-   } else if (playerSelection === "Paper" && computerSelection === "Paper") {
+   } else if (playerSelection === "paper" && computerSelection === "paper") {
     console.log("Draw!")
-   } else if (playerSelection === "Scissors" && computerSelection === "Scissors") {
+   } else if (playerSelection === "scissors" && computerSelection === "scissors") {
     console.log("Draw!")
+   }
+
+   if (playerSelection === "rock" && computerSelection === "scissors") {
+    console.log("You win, Rock beats Scissors.")
+   }else if (playerSelection === "paper" && computerSelection === "rock") {
+    console.log("You win, Paper beats Rock.")
+   } else if (playerSelection === "scissors" && computerSelection === "paper") {
+    console.log("You win, Scissors beats Paper.")
    }
 }
 playGame()
