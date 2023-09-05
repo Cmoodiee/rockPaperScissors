@@ -1,20 +1,36 @@
 function getComputerChoice() {
     const num = Math.floor(Math.random() * 3)
     const rockPaperScissors = ["Rock" , "Paper" , "Scissors"];
-    console.log(`${rockPaperScissors[0]}`)
+    return rockPaperScissors[0];
 }
 
 function playGame() {
    const playerSelection = prompt("Make a choice. Rock, paper, or scissors:");
-   console.log(playerSelection)
    const computerSelection = getComputerChoice()
 
-   if (playerSelection === "Rock" && getComputerChoice === "Rock") {
+   if (playerSelection === "Rock" && computerSelection === "Rock") {
     console.log("Draw!")
    }
 }
 playGame()
 
+
+// function getComputerChoice() {
+//     const num = Math.floor(Math.random() * 3)
+//     const rockPaperScissors = ["Rock" , "Paper" , "Scissors"];
+//     return rockPaperScissors[0]
+// }
+
+// function playGame() {
+//    const playerSelection = prompt("Make a choice. Rock, paper, or scissors:");
+//    const computerSelection = getComputerChoice()
+
+//    if (playerSelection === "Rock" && computerSelection === "Rock") {
+//     console.log("Draw!")
+//    } 
+// }
+
+// playGame()
 
 // create a function to get computer choice
 // randomly return rock paper or scissors
