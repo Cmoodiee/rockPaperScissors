@@ -1,19 +1,21 @@
-console.log("hello world");
-
 function getComputerChoice() {
     const num = Math.floor(Math.random() * 3)
     const rockPaperScissors = ["Rock" , "Paper" , "Scissors"];
-    // const Rock = 1;
-    // const Paper = 2;
-    // const Scissors = 3;
-
-    console.log(`${rockPaperScissors[num]}`)
+    console.log(`${rockPaperScissors[0]}`)
 }
 
-// let random number equal the string for each choice 
-// print the string
+function playGame() {
+   const playerSelection = prompt("Make a choice. Rock, paper, or scissors:");
+   console.log(playerSelection)
+   const computerSelection = getComputerChoice()
 
-getComputerChoice()
+   if (playerSelection === "Rock" && getComputerChoice === "Rock") {
+    console.log("Draw!")
+   }
+}
+playGame()
+
+
 // create a function to get computer choice
 // randomly return rock paper or scissors
 // write a function that plays a single round of rock paper scissors
