@@ -5,8 +5,9 @@ function getComputerChoice() {
 }
 
 function playGame() {
-   const playerSelection = prompt("Make a choice. Rock, paper, or scissors:");
+   const userInput = prompt("Make a choice. Rock, paper, or scissors:");
    const computerSelection = getComputerChoice()
+   const playerSelection = userInput.toLowerCase()
 
    if (playerSelection === "rock" && computerSelection === "rock") {
     console.log("Draw!")
@@ -31,6 +32,8 @@ function playGame() {
    } else if (playerSelection === "scissors" && computerSelection === "rock") {
     console.log("You lose, Rock beats Scissors.")
    }
+
+   return playerSelection, computerSelection;
 }
 playGame()
 
