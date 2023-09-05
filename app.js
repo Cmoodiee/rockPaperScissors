@@ -23,6 +23,14 @@ function playGame() {
    } else if (playerSelection === "scissors" && computerSelection === "paper") {
     console.log("You win, Scissors beats Paper.")
    }
+
+   if (playerSelection === "rock" && computerSelection === "paper") {
+    console.log("You lose, Paper beats Rock.")
+   } else if (playerSelection === "paper" && computerSelection === "scissors") {
+    console.log("You lose, Scissors beats Paper.")
+   } else if (playerSelection === "scissors" && computerSelection === "rock") {
+    console.log("You lose, Rock beats Scissors.")
+   }
 }
 playGame()
 
