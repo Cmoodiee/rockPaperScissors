@@ -4,37 +4,6 @@ function getComputerChoice() {
     return rockPaperScissors[num];
 }
 
-// function playGame() {
-//    const userInput = prompt("Make a choice. Rock, paper, or scissors:");
-//    const computerSelection = getComputerChoice()
-//    const playerSelection = userInput.toLowerCase()
-
-//    if (playerSelection === "rock" && computerSelection === "rock") {
-//     console.log("Draw!")
-//    } else if (playerSelection === "paper" && computerSelection === "paper") {
-//     console.log("Draw!")
-//    } else if (playerSelection === "scissors" && computerSelection === "scissors") {
-//     console.log("Draw!")
-//    }
-
-//    if (playerSelection === "rock" && computerSelection === "scissors") {
-//     console.log("You win, Rock beats Scissors.")
-//    }else if (playerSelection === "paper" && computerSelection === "rock") {
-//     console.log("You win, Paper beats Rock.")
-//    } else if (playerSelection === "scissors" && computerSelection === "paper") {
-//     console.log("You win, Scissors beats Paper.")
-//    }
-
-//    if (playerSelection === "rock" && computerSelection === "paper") {
-//     console.log("You lose, Paper beats Rock.")
-//    } else if (playerSelection === "paper" && computerSelection === "scissors") {
-//     console.log("You lose, Scissors beats Paper.")
-//    } else if (playerSelection === "scissors" && computerSelection === "rock") {
-//     console.log("You lose, Rock beats Scissors.")
-//    }
-//    return playerSelection, computerSelection;
-// }
-// playGame()
 let playerScore = 0
 let computerScore = 0
 
@@ -85,7 +54,7 @@ function fullGame() {
      }
 
      for(let i = 0; i < 5; i++) {
-        console.log(i)
+        console.log(`-----Round ${i + 1}-----`)
         playGame()
     }
     if(playerScore > computerScore) {
@@ -95,6 +64,8 @@ function fullGame() {
     }
 }
 fullGame()
+
+
 // create a function to get computer choice
 // randomly return rock paper or scissors
 // write a function that plays a single round of rock paper scissors
