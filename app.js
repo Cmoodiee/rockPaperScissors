@@ -73,7 +73,7 @@ function fullGame() {
         return playerSelection, computerSelection;
      }
 
-     for(let i = 0; i < 6; i++) {
+     for(let i = 0; i < 5; i++) {
         console.log(i)
         playGame()
     }
