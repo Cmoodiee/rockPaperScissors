@@ -51,8 +51,12 @@ function fullGame() {
             computerScore++
          console.log(`Draw! The score is ${playerScore} - ${computerScore}.`)
         } else if (playerSelection === "paper" && computerSelection === "paper") {
+            playerScore++
+            computerScore++
          console.log(`Draw! The score is ${playerScore} - ${computerScore}.`)
         } else if (playerSelection === "scissors" && computerSelection === "scissors") {
+            playerScore++
+            computerScore++
          console.log(`Draw! The score is ${playerScore} - ${computerScore}.`)
         }
      
@@ -60,16 +64,21 @@ function fullGame() {
             playerScore++
          console.log(`You win, Rock beats Scissors. The score is ${playerScore} - ${computerScore}.`)
         }else if (playerSelection === "paper" && computerSelection === "rock") {
+            playerScore++
          console.log(`You win, Paper beats Rock. The score is ${playerScore} - ${computerScore}.`)
         } else if (playerSelection === "scissors" && computerSelection === "paper") {
+            playerScore++
          console.log(`You win, Scissors beats Paper. The score is ${playerScore} - ${computerScore}.`)
         }
      
         if (playerSelection === "rock" && computerSelection === "paper") {
+            computerScore++
          console.log(`You lose, Paper beats Rock. The score is ${playerScore} - ${computerScore}.`)
         } else if (playerSelection === "paper" && computerSelection === "scissors") {
+            computerScore++
          console.log(`You lose, Scissors beats Paper. The score is ${playerScore} - ${computerScore}.`)
         } else if (playerSelection === "scissors" && computerSelection === "rock") {
+            computerScore++
          console.log(`You lose, Rock beats Scissors. The score is ${playerScore} - ${computerScore}.`)
         }
         return playerSelection, computerSelection;
