@@ -47,28 +47,30 @@ function fullGame() {
         
      
         if (playerSelection === "rock" && computerSelection === "rock") {
-         console.log("Draw!")
+            playerScore++
+            computerScore++
+         console.log(`Draw! The score is ${playerScore} - ${computerScore}.`)
         } else if (playerSelection === "paper" && computerSelection === "paper") {
-         console.log("Draw!")
+         console.log(`Draw! The score is ${playerScore} - ${computerScore}.`)
         } else if (playerSelection === "scissors" && computerSelection === "scissors") {
-         console.log("Draw!")
+         console.log(`Draw! The score is ${playerScore} - ${computerScore}.`)
         }
      
         if (playerSelection === "rock" && computerSelection === "scissors") {
             playerScore++
          console.log(`You win, Rock beats Scissors. The score is ${playerScore} - ${computerScore}.`)
         }else if (playerSelection === "paper" && computerSelection === "rock") {
-         console.log("You win, Paper beats Rock.")
+         console.log(`You win, Paper beats Rock. The score is ${playerScore} - ${computerScore}.`)
         } else if (playerSelection === "scissors" && computerSelection === "paper") {
-         console.log("You win, Scissors beats Paper.")
+         console.log(`You win, Scissors beats Paper. The score is ${playerScore} - ${computerScore}.`)
         }
      
         if (playerSelection === "rock" && computerSelection === "paper") {
-         console.log("You lose, Paper beats Rock.")
+         console.log(`You lose, Paper beats Rock. The score is ${playerScore} - ${computerScore}.`)
         } else if (playerSelection === "paper" && computerSelection === "scissors") {
-         console.log("You lose, Scissors beats Paper.")
+         console.log(`You lose, Scissors beats Paper. The score is ${playerScore} - ${computerScore}.`)
         } else if (playerSelection === "scissors" && computerSelection === "rock") {
-         console.log("You lose, Rock beats Scissors.")
+         console.log(`You lose, Rock beats Scissors. The score is ${playerScore} - ${computerScore}.`)
         }
         return playerSelection, computerSelection;
      }
