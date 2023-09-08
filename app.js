@@ -35,6 +35,8 @@ function getComputerChoice() {
 //    return playerSelection, computerSelection;
 // }
 // playGame()
+let playerScore = 0
+let computerScore = 0
 
 function fullGame() {
 
@@ -42,8 +44,6 @@ function fullGame() {
         const userInput = prompt("Make a choice. Rock, paper, or scissors:");
         const computerSelection = getComputerChoice()
         const playerSelection = userInput.toLowerCase()
-        let playerScore = 0
-        let computerScore = 0
         
      
         if (playerSelection === "rock" && computerSelection === "rock") {
@@ -87,6 +87,11 @@ function fullGame() {
      for(let i = 0; i < 5; i++) {
         console.log(i)
         playGame()
+    }
+    if(playerScore > computerScore) {
+        console.log("You win, humanity gets to survive!!!!")
+    } else {
+        console.log("You lose, humanity dies and the robots take over :(")
     }
 }
 fullGame()
